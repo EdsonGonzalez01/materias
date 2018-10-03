@@ -9,6 +9,8 @@ import { HomePage } from '../pages/home/home';
 import { HistoriaPage } from '../pages/historia/historia';
 import { CsPage } from '../pages/cs/cs';
 import { PyEPage } from '../pages/py-e/py-e';
+import { ComPage } from '../pages/com/com';
+import { ComPageModule } from '../pages/com/com.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { PyEPage } from '../pages/py-e/py-e';
     HomePage,
     HistoriaPage,
     CsPage,
-    PyEPage
+    PyEPage,
+    ComPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +31,8 @@ import { PyEPage } from '../pages/py-e/py-e';
     HomePage,
     HistoriaPage,
     CsPage,
-    PyEPage
+    PyEPage,
+    ComPage
   ],
   providers: [
     StatusBar,

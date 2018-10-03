@@ -3,6 +3,7 @@ import { NavController } from 'ionic-angular';
 import { HistoriaPage } from '../historia/historia';
 import { CsPage } from '../cs/cs';
 import { PyEPage } from '../py-e/py-e';
+import { ComPage } from '../com/com';
 
 @Component({
   selector: 'page-home',
@@ -12,6 +13,7 @@ export class HomePage {
   historia = HistoriaPage;
   CS = CsPage; 
   PyE =PyEPage; 
+  Com = ComPage;
 
   constructor(public navCtrl: NavController) {
 
@@ -33,5 +35,13 @@ export class HomePage {
 
   }
 
+  clickCom(){
+    this.navCtrl.push(this.Com);
+  
+  }
 
 }
+
+
+
+
