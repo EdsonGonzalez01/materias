@@ -39,10 +39,19 @@
   </ion-card>
 
 
+  <ion-card (click)= "clickDib()" style = "border-radius: 10px; background-size: cover; background-image: url('https://dt6wuqe2x3po3.cloudfront.net/images/hero/stock-promo-2-980x529.jpg?1520624270')">
+  
+    <ion-card-content>
+     <h1 style = 'font-weight: bold; color : rgb(75, 117, 146);  text-align: center' >Dibujo</h1>
+    </ion-card-content>
+  
+  </ion-card>
+
+
 <ion-card (click)= "clickMi()" style = "border-radius: 10px; background-size: cover; background-image: url('data:image/png;base64,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')">
 
   <ion-card-content>
-   <h1 style = 'font-weight: bold; color : rgb(241, 116, 13);  text-align: center' >MI</h1>
+   <h1 style = 'font-weight: bold; color : rgb(142, 13, 241);  text-align: center' >MI</h1>
   </ion-card-content>
 
 </ion-card>
@@ -50,7 +59,7 @@
 <ion-card (click)= "clickPapps()" style = "border-radius: 10px; background-size: cover; background-image: url('https://cdn.macrumors.com/article-new/2017/11/iphone-x-apps.jpg')">
 
   <ion-card-content>
-   <h1 style = 'font-weight: bold; color : rgb(241, 116, 13);  text-align: center' >Progamacion de Apps</h1>
+   <h1 style = 'font-weight: bold; color : rgb(241, 13, 13);  text-align: center' >Progamacion de Apps</h1>
   </ion-card-content>
 
 </ion-card>
@@ -58,7 +67,7 @@
 <ion-card (click)= "clickRobo()" style = "border-radius: 10px; background-size: cover; background-image: url('https://d4slx1inm0wx8.cloudfront.net/21736-large_default/krypton-1-abilix-kit-robotica.jpg')">
 
   <ion-card-content>
-   <h1 style = 'font-weight: bold; color : rgb(241, 116, 13);  text-align: center' >Robotica</h1>
+   <h1 style = 'font-weight: bold; color : rgb(13, 218, 241);  text-align: center' >Robotica</h1>
   </ion-card-content>
 
 </ion-card>
