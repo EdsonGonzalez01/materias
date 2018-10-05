@@ -10,7 +10,9 @@ import { HistoriaPage } from '../pages/historia/historia';
 import { CsPage } from '../pages/cs/cs';
 import { PyEPage } from '../pages/py-e/py-e';
 import { ComPage } from '../pages/com/com';
-import { ComPageModule } from '../pages/com/com.module';
+import { RoboPage } from '../pages/robo/robo';
+import { PappsPage } from '../pages/papps/papps';
+import { MiPage } from '../pages/mi/mi';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,10 @@ import { ComPageModule } from '../pages/com/com.module';
     HistoriaPage,
     CsPage,
     PyEPage,
-    ComPage
+    ComPage,
+    RoboPage,
+    PappsPage,
+    MiPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,10 @@ import { ComPageModule } from '../pages/com/com.module';
     HistoriaPage,
     CsPage,
     PyEPage,
-    ComPage
+    ComPage,
+    RoboPage,
+    PappsPage,
+    MiPage
   ],
   providers: [
     StatusBar,

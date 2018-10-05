@@ -4,6 +4,9 @@ import { HistoriaPage } from '../historia/historia';
 import { CsPage } from '../cs/cs';
 import { PyEPage } from '../py-e/py-e';
 import { ComPage } from '../com/com';
+import { RoboPage } from '../robo/robo';
+import { PappsPage } from '../papps/papps';
+import { MiPage } from '../mi/mi';
 
 @Component({
   selector: 'page-home',
@@ -14,34 +17,46 @@ export class HomePage {
   CS = CsPage; 
   PyE =PyEPage; 
   Com = ComPage;
+  Robo = RoboPage;
+  Papps = PappsPage;
+  Mi = MiPage; 
 
   constructor(public navCtrl: NavController) {
 
   }
 
-  clickHistoria(){
-    this.navCtrl.push(this.historia);
+    clickHistoria(){
+      this.navCtrl.push(this.historia);
+
+
+    }
+
+    clickCiencias(){
+      this.navCtrl.push(this.CS);
+
+    }
+
+    clickPyE(){
+      this.navCtrl.push(this.PyE)
+      
+
+    }
+
+    clickPapps(){
+      this.navCtrl.push(this.Papps)  
+
+
+  }
+    clickMi(){
+    this.navCtrl.push(this.Mi)  
+
+
+  }
+    clickRobo(){
+    this.navCtrl.push(this.Robo)  
 
 
   }
 
-  clickCiencias(){
-    this.navCtrl.push(this.CS);
-
-  }
-
-  clickPyE(){
-    this.navCtrl.push(this.PyE);
-
-  }
-
-  clickCom(){
-    this.navCtrl.push(this.Com);
-  
-  }
 
 }
-
-
-
-
